@@ -11,4 +11,4 @@ def can_pay(price, cash_given):
         return False
 
 
-print(can_pay(100, 250))
+print(can_pay(0, 0))
