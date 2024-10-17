@@ -5,4 +5,4 @@ def string_to_array(s):
         return ['']
     return split_string
 
-print(string_to_array(''))
+print(string_to_array('sally'))
