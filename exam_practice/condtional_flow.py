@@ -46,16 +46,38 @@
 #     ones = int % 10    
 #     return f'This number has {tens} tens and {ones} ones'
 
-# print(tens_and_ones(8))
+# print(tens_and_ones(15))
 
-students = ['Chloe', 'Anna', 'Lauren', 'Shreya', 'Siobhan']
-print(sorted(students)[1])
+# def decompose_numbers(number): 
+#     numbers = { 0: "Zero", 1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six",  7: "Seven", 8: "Eight", 9: "Nine"} 
+#     decompose_str = str(number) 
+#     tens = int(decompose_str[0]) 
+#     ones = int(decompose_str[1]) 
+#     if tens == 1: 
+#         tens_string = f"{numbers.get(tens)} Ten" 
+#     else: 
+#         tens_string = f"{numbers.get(tens)} Tens" 
+
+#     if ones == 1: ones_string = f"{numbers.get(ones)} One"
+#     else: 
+#         ones_string = f"{numbers.get(ones)} Ones" 
+
+#     print("{}, {}".format(tens_string, ones_string)) 
+
+# decompose_numbers(11)
+
+# students = ['Chloe', 'Anna', 'Lauren', 'Shreya', 'Siobhan']
+# print(sorted(students)[0])
 
 # Create a ‘shop’ dictionary with at least 4 items and respective prices. ●
 # Write some code that will take in the name of an item and output the price
 
 def bootsale(items):
     items = {'picture':10.00, 'rocking_horse':5.00, 'weights': 15.00, 'tv':30.00}
-    return items.fromkeys()
+    print(items)
+    item_wanted = input('What item would you like to buy? ').lower()
+    if item_wanted in items:
+        return {items[item_wanted]}
+    
 
 print(bootsale('picture'))
